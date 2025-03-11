@@ -13,5 +13,5 @@
 
         } while (userInput !== target)
 
-            console.log('You have typed the correct language:', userInput)
+            alert('You have typed the correct language:', userInput)
     }
