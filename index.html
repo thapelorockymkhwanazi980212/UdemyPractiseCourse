@@ -14,10 +14,24 @@
             let name = prompt('Please enter you name');
             alert('Hello, Welcome ' + name + " ");
         }
+
+
+        //method for adding numbers together
+        function add()
+        {
+            var num1  = parseFloat(prompt('Please enter the FIRST number'));
+            var num2  = parseFloat(prompt('Please enter the SECOND number'));
+
+            var sum = num1 + num2;
+            alert('Sum is: ' + sum);
+        }
     </script>
+
+
     <script src="script.js"></script>
     <script src="section3Loops.js"></script>
     <script src="functions.js"></script>
+    <script src="DOM_elements.js"></script>
 </head>
 <body>
 
@@ -30,7 +44,11 @@
     <p>
         Click <a href="#" onclick="add()"> here </a> to add two numbers using console.
        <br>
-        Thapelo Mkhwanazi
     </p>
+
+    <img src="images/verify-email-image.png" id="image" alt="Verify Image">
+    <br>
+    <button onclick="changeImage()">Change Image</button>
+    <button onclick="removeImage()">Remove Image</button>
 </body>
 </html>
