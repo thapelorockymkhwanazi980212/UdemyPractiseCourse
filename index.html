@@ -3,20 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Udemy Course</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e1f0fa;  /* Light blue background */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: #2b6cb0;  /* Darker blue text */
+        }
+
+        h1, h2 {
+            color: #1e40af;  /* Deep blue */
+        }
+
+        button {
+            background-color: #4a90e2;  /* Blue button */
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #357ab7;  /* Darker blue on hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: #4a90e2;  /* Link in blue */
+        }
+
+        a:hover {
+            color: #357ab7;  /* Darker blue on hover */
+        }
+
+        img {
+            width: 200px;
+            margin: 20px 0;
+        }
+
+        /* Optional: To center align all the content */
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
 
     <script>
         function showMessage()
         {
-            let name = prompt('Please enter you name');
+            let name = prompt('Please enter your name');
             alert('Hello, Welcome ' + name + " ");
         }
 
-
-        //method for adding numbers together
+        // method for adding numbers together
         function add()
         {
             var num1  = parseFloat(prompt('Please enter the FIRST number'));
@@ -25,38 +79,43 @@
             var sum = num1 + num2;
             alert('Sum is: ' + sum);
         }
+
+        // Other JavaScript functions (like getCoffee, removeImage, etc.) are assumed to be here...
     </script>
 
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
     <script src="section3Loops.js"></script>
     <script src="functions.js"></script>
     <script src="DOM_elements.js"></script>
     <script src="closures.js"></script>
     <script src="promise.js"></script>
+
 </head>
 <body>
 
-    <p>Udemy Free Course</p>
+    <div class="content-container">
+        <p>Udemy Free Course</p>
 
-    <button onclick="showMessage()">Welcome</button>
-    <button onclick="showContent()">Show Console</button>
-    <button onclick="promptLanguage()">Guess Language</button>
+        <button onclick="showMessage()">Welcome</button>
+        <button onclick="showContent()">Show Console</button>
+        <button onclick="promptLanguage()">Guess Language</button>
 
-    <p>
-        Click <a href="#" onclick="add()"> here </a> to add two numbers using console.
-       <br>
-    </p>
+        <p>
+            Click <a href="#" onclick="add()"> here </a> to add two numbers using console.
+            <br>
+        </p>
 
-    <img src="images/verify-email-image.png" id="image" alt="Verify Image">
-    <br>
-    <button onclick="changeImage()">Change Image</button>
-    <button onclick="removeImage()">Remove Image</button>
+        <img src="images/verify-email-image.png" id="image" alt="Verify Image">
+        <br>
+        <button onclick="changeImage()">Change Image</button>
+        <button onclick="removeImage()">Remove Image</button>
 
-    <p>
-        <a href="#" onclick="outerFunction()">Counter</a> any number by 3 (Practise closure, using inner and outer function)
-    </p>
+        <p>
+            <a href="#" onclick="outerFunction()">Counter</a> any number by 3 (Practice closure, using inner and outer function)
+        </p>
 
-    <button onclick="getCoffee()">Get Coffee</button>
+        <button onclick="getCoffee()">Get Coffee</button>
+    </div>
+
 </body>
 </html>
